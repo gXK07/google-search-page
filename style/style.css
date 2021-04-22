@@ -1,4 +1,16 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    ". milieu ."
+    "footer footer footer";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2.1fr 7.6fr 7.4fr;
+}
+
+
 .header{
+    grid-area: header;
     padding-top: 5px;
     border-bottom: solid rgb(221, 221, 221);
     border-width: 0.1px;
@@ -107,12 +119,29 @@
 
 
 .L2 a{
-    font-family: arial, sans-serif;
-    color: rgb(90, 90, 90);
+    font-family: arial;
+    color: rgb(116, 115, 115);
     font-size: 14px;
-    margin: 0 15px 0 15px;
+    margin: 0 10px 0 0px;
 }
 
 .L2 a:hover{
     cursor: pointer;
+}
+
+.L2 a img{
+    height: 18px;
+    width: 18px;
+    opacity: 0.7;
+}
+
+
+.milieu{
+    grid-area: milieu;
+    background-color: indianred;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #F2F2F2;
 }
