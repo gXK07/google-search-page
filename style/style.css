@@ -3,8 +3,21 @@ body{
     grid-template-areas:
     "header header header"
     ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
+    ". milieu ."
     "footer footer footer";
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(16, 1fr);
     grid-template-columns: 2.1fr 7.6fr 7.4fr;
 }
 
@@ -138,7 +151,7 @@ body{
 
 .milieu{
     grid-area: milieu;
-    background-color: indianred;
+    border : solid black
 }
 
 .footer{
