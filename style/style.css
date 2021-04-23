@@ -2,24 +2,20 @@ body{
     display: grid;
     grid-template-areas:
     "header header header"
-    ". milieu ."
-    ". milieu1 ."
-    ". milieu2 ."
-    ". milieu3 ."
-    ". milieu4 ."
-    ". milieu5 ."
-    ". milieu6 ."
-    ". milieu7 ."
-    ". milieu8 ."
-    ". milieu9 ."
-    ". milieu10 ."
-    ". milieu11 ."
-    ". milieu12 ."
-    ". milieu13 ."
+    ". middle ."
     "footer footer footer";
-    grid-template-rows: 1fr 2fr repeat(13, 1fr);
+    grid-template-rows: 1fr 14fr 1fr;
     grid-template-columns: 2.1fr 7.6fr 7.4fr;
 }
+
+.middle a {
+    color: #1A0DAB;
+    font-size: 20px;
+    font-family: arial;
+    text-decoration: none;
+}
+
+/* JE COMMENCE LE HEADER */
 
 
 .header{
@@ -148,6 +144,8 @@ body{
     opacity: 0.7;
 }
 
+/* JE COMMENCE LE MILIEU*/
+
 
 .milieu{
     grid-area: milieu;
@@ -213,6 +211,9 @@ body{
 .milieu13{
     grid-area: milieu13;
 }
+
+
+/* JE COMMENCE LE FOOTER */
 
 .footer{
     grid-area: footer;
