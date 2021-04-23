@@ -3,21 +3,21 @@ body{
     grid-template-areas:
     "header header header"
     ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
-    ". milieu ."
+    ". milieu1 ."
+    ". milieu2 ."
+    ". milieu3 ."
+    ". milieu4 ."
+    ". milieu5 ."
+    ". milieu6 ."
+    ". milieu7 ."
+    ". milieu8 ."
+    ". milieu9 ."
+    ". milieu10 ."
+    ". milieu11 ."
+    ". milieu12 ."
+    ". milieu13 ."
     "footer footer footer";
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: 1fr 2fr repeat(13, 1fr);
     grid-template-columns: 2.1fr 7.6fr 7.4fr;
 }
 
@@ -151,7 +151,67 @@ body{
 
 .milieu{
     grid-area: milieu;
-    border : solid black
+    display: grid;
+    grid-template-areas: 
+    "top top top"
+    "g . d"
+    "g . d";
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#
+.top{
+    grid-area: top;
+    border: solid black;
+}
+.g{
+    grid-area: g;
+    border: solid black;
+    margin-left: 20px;
+}
+
+.d{
+    grid-area: d;
+    border: solid black;
+}
+.milieu1{
+    grid-area: milieu1;
+}
+.milieu2{
+    grid-area: milieu2;
+}
+.milieu3{
+    grid-area: milieu3;
+}
+.milieu4{
+    grid-area: milieu4;
+}
+.milieu5{
+    grid-area: milieu5;
+}
+.milieu6{
+    grid-area: milieu6;
+}
+.milieu7{
+    grid-area: milieu7;
+}
+.milieu8{
+    grid-area: milieu8;
+}
+.milieu9{
+    grid-area: milieu9;
+}
+.milieu10{
+    grid-area: milieu10;
+}
+.milieu11{
+    grid-area: milieu11;
+}
+.milieu12{
+    grid-area: milieu12;
+}
+.milieu13{
+    grid-area: milieu13;
 }
 
 .footer{
